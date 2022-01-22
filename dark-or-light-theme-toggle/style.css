@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --light-bg-color: rgba(100, 100, 100, 0.2);
+    --dark-bg-color: rgb(34, 39, 46);
+}
+
+.container {
+    height: 100vh;
+    background-color: var(--light-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+#title {
+    margin-bottom: 20px;
+    font-family: Poppins, 'Fira Code', sans-serif;
+    letter-spacing: 4px;
+    background-color: none;
+}
+
+.box {
+    width: 50px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    border-radius: 8px;
+    box-shadow: 0 0 3px 5px rgba(100, 100, 100, 0.25);
+    background-color: rgb(246, 248, 253);
+    overflow-y: hidden;
+    position: relative;
+}
+
+i {
+    cursor: pointer;
+}
+
+#moon {
+    position: absolute;
+    top: -20px;
+    color: black;
+}
+
+#sun {
+    color: rgb(235, 235, 20);
+}
+
+#sun,
+#moon {
+    transition: all 0.6s ease-out;
+    /* slows down when it appears. */
+}
+
+.sunGoDown {
+    transform: translateY(25px);
+    animation: sunDisappers 0.5s forwards;
+}
+
+@keyframes sunDisappers {
+    0% {
+        opacity: 1;
+        color: rgb(226, 154, 21);
+    }
+    50% {
+        opacity: 0.5;
+        color: rgb(245, 162, 9);
+    }
+    100% {
+        opacity: 0;
+        color: orange;
+    }
+}
+
+.moonGoDown {
+    transform: translateY(32px);
+    animation: moonAppears 0.5s forwards;
+}
+
+@keyframes moonAppears {
+    0% {
+        opacity: 0;
+        color: rgb(100, 100, 100);
+    }
+    50% {
+        opacity: 0.5;
+        color: rgb(200, 200, 200);
+    }
+    100% {
+        opacity: 1;
+        color: rgb(255, 255, 255);
+    }
+}
+
+.darkBackground {
+    background-color: var(--dark-bg-color);
+}
+
+.removeBoxShadow {
+    box-shadow: none;
+    background-color: rgb(70, 78, 88);
+    border: 2px solid rgb(144, 157, 171);
+}
+
+.titleAtDark {
+    color: white;
+}
+
+.sunGoUp {
+    animation: sunGoUp 0.5s forwards;
+}
+
+@keyframes sunGoUp {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.moonGoUp {
+    animation: moonGoUp 0.5s forwards;
+}
+
+@keyframes moonGoUp {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+    }
+}

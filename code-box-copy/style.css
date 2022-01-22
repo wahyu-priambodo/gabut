@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,
+.container {
+    background-color: rgb(34, 39, 46);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.box {
+    width: 95%;
+    margin-bottom: 20px;
+}
+
+.code {
+    padding: 0 5px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.codeWrapper {
+    margin-bottom: 5px;
+}
+
+.codeWrapper,
+.output {
+    background-color: rgb(55, 62, 71);
+    border: 2px solid rgb(68, 76, 86);
+    border-radius: 8px;
+}
+
+.output {
+    border-style: dashed;
+}
+
+h1,
+h2,
+p {
+    font: bold 1.8em 'Fira Code', Arial, sans-serif;
+    color: rgb(205, 217, 229);
+    ;
+}
+
+.lang {
+    padding-left: 10px;
+}
+
+.copyText {
+    font-size: .6em;
+    margin-right: 10px;
+    padding: 5px;
+    border: 2px solid rgb(130, 140, 150);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.outputCode {
+    font-size: 1.45em;
+}
+
+#codeCopied {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+textarea {
+    margin-bottom: 20px;
+}
+
+.outputCode,
+#outputBash,
+#outputJava {
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+#outputBash,
+#outputJava {
+    margin-right: 20px;
+}
+
+.highlightBoxes {
+    border-color: rgb(144, 157, 171);
+    background-color: rgb(70, 78, 88);
+}
+
+.highlightBorderOutput1 {
+    border-color: rgb(0, 231, 231);
+}
+
+.highlightBorderOutput2 {
+    border-color: rgb(235, 60, 104);
+}

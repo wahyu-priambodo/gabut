@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Code">
+    <link rel="stylesheet" href="./assets/prism.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Code Box Copy</title>
+</head>
+
+<body class="line-numbers match-braces rainbow-braces">
+    <div class="container">
+        <div id="box1" class="box">
+            <div class="codeWrapper">
+                <div class="header">
+                    <h1 class="lang">Bash.sh</h1>
+                    <p class="copyText" hidden>copy</p>
+                </div>
+                <div id="code1" class="code">
+                    <pre>
+                        <code id="bashCode" class="language-bash">
+                            $ declare -a arr=('Wahyu' 'Bagus' 'Dafa'); for i in ${!arr[@]}; do echo "siswa ke-$i adalah ${arr[i]}"; done
+                        </code>
+                    </pre>
+                </div>
+            </div>
+            <div class="output highlightBorderOutput1">
+                <h2 class="outputCode">&gt; Output:</h2>
+                <pre id="outputBash">
+                    <code class="language-bash">
+                        $ siswa ke-0 adalah Wahyu
+                        $ siswa ke-1 adalah Bagus
+                        $ siswa ke-2 adalah Dafa
+                    </code>
+                </pre>
+            </div>
+        </div>
+        <div id="box2" class="box">
+            <div class="codeWrapper">
+                <div class="header">
+                    <h1 class="lang">HelloWorld.java</h1>
+                    <p class="copyText" hidden>copy</p>
+                </div>
+                <div id="code2" class="code">
+                    <pre>
+                        <code id="javaCode" class="language-java">
+                            public class HelloWorld {
+                                public static void main(String[] args) {
+                                    System.out.print("Hello World");
+                                }
+                            }
+                        </code>
+                    </pre>
+                </div>
+            </div>
+            <div class="output highlightBorderOutput2">
+                <h2 class="outputCode">&gt; Output:</h2>
+                <pre id="outputJava">
+                    <code class="language-bash">
+                        $ Hello World
+                    </code>
+                </pre>
+            </div>
+        </div>
+        <div class="codeField">
+            <h1 id="codeCopied">Put your code here..</h1>
+            <textarea name="code" id="pastedCode" cols="60" rows="15"></textarea>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+    <!-- Prismjs assets -->
+    <script type="text/javascript" src="./assets/prism.js"></script>
+</body>
+
+</html>
