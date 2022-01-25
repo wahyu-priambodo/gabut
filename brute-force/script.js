@@ -71,9 +71,13 @@ const fx = new TextScramble(el)
 
 let counter = 0
 const next = () => {
-  if(counter!=2){
+  if(counter==0){
     fx.setText(phrases[counter]).then(()=>{
       setTimeout(next,950)
+    })
+  }else if(counter==1){
+    fx.setText(phrases[counter]).then(()=>{
+      setTimeout(next,1300)
     })
   }else{
     fx.setText(phrases[counter]).then(()=>{
