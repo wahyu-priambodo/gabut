@@ -63,7 +63,7 @@ class TextScramble {
 const phrases = [
   'Hi there,',
   'I\'m w4h0yuz a.k.a wahyu',
-  'a (back-end dev) && (dev sec ops)'
+  'a (back-end dev) && (cybersec enthusiast)'
 ]
 
 const el = document.querySelector('.text')
