@@ -62,7 +62,7 @@ class TextScramble {
 
 const phrases = [
   'Hi there,',
-  'I\'m w4h0yuz a.k.a wahyu',
+  'I\'m Wahyu Priambodo',
   'a (back-end dev) && (cybersec enthusiast)'
 ]
 
